@@ -9,141 +9,142 @@
 </head>
 <body>
    
-    <div class="container">
-        <div class="color-content">
-            <div class="color-box" id="red"></div>
-            <div class="color-box" id="green"></div>
-            <div class="color-box" id="dark-blue"></div>
-            <div class="color-box" id="default"></div>
-        </div>
-        <div class="content">
-            <h1 class="title">Välkommen till kundservice</h1>
-            <div class="card">
-                <p class="question">Vad vill du ha hjälp med?</p>
-                <div class="btn-large-content">
-                    <div class="btn-large" id="before-purchase">
-                        <div class="icon"></div>
-                        <p class="btn-large-text">Innan köp</p>
+    <div class="contact-us">
+        <div class="container-larg">
+            <div class="color-content">
+                <div class="color-box" id="red"></div>
+                <div class="color-box" id="green"></div>
+                <div class="color-box" id="dark-blue"></div>
+                <div class="color-box" id="default"></div>
+            </div>
+            <div class="container-small">
+                <h1 class="contact-us-title">Välkommen till kundservice</h1>
+                <div class="contact-card">
+                    <p class="question">Hur kan vi hjälp dig?</p>
+                    <div class="btn-large-content">
+                        <div class="btn-large" id="before-purchase">
+                            <div class="box-icon"></div>
+                            <p class="btn-large-text">Innan köp</p>
+                        </div>
+                        <div class="btn-large" id="cancellation-change">
+                            <div class="box-icon"></div>
+                            <p class="btn-large-text">Annullering eller ändring</p>
+                        </div>
+                        <div class="btn-large" id="delivery-payment">
+                            <div class="box-icon"></div>
+                            <p class="btn-large-text">Leverans & Betalning</p>
+                        </div>
+                        <div class="btn-large" id="return-order">
+                            <div class="box-icon"></div>
+                            <p class="btn-large-text">Ångerköp</p>
+                        </div>
+                        <div class="btn-large" id="complaint">
+                            <div class="box-icon"></div>
+                            <p class="btn-large-text">Reklamation</p>
+                        </div>
+                        <div class="btn-large" id="other-questions">
+                            <div class="box-icon"></div>
+                            <p class="btn-large-text">Övriga frågor</p>
+                        </div>
                     </div>
-                    <div class="btn-large" id="cancellation-change">
-                        <div class="icon"></div>
-                        <p class="btn-large-text">Annullering eller ändring</p>
+                    <div class="form-content">
+                    
+                        <div class="category-items">
+                            <ul></ul>
+                        </div>
+                        <!-- start shred group -->
+                        <div class="hidden-group shred-group"> 
+                            <div class="form-group">
+                                <div class="form-group-col">
+                                    <label class="inputLabel" for="contactname">Namn: <span class="alert"> * </span></label>	
+                                    <input type="text" name="contactname" size="30" id="contactname">
+                                </div>
+                                <div class="form-group-col">
+                                    <label class="inputLabel" for="email-address">E-post: <span class="alert"> * </span></label>	
+                                    <input type="email" name="email" size="30" id="email-address">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group-col">
+                                    <label class="inputLabel" for="phoneNumber">Mobilnummer: <span class="alert"> * </span></label>	
+                                    <input type="text" name="tel" size="30" id="phoneNumber">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end shred-group -->
+                        <!-- start order number -->
+                        <div class="hidden-group field-ordernr">
+                            <div class="form-group-col">
+                                <label class="inputLabel" for="ordernr">Ordernummer</label>			  
+                                <input type="text" name="ordernr" size="20" id="ordernr">
+                            </div>
+                        </div>
+                        <!-- end order number -->
+                        <!-- start description question -->
+                        <div class="hidden-group field-description-q">
+                            <div class="form-group-col" >
+                                <label class="inputLabel" for="description-q">Beskrivning/frågeställning etc:</label>
+                                <textarea name="descriptionq" cols="30" rows="6" id="description-q"></textarea>      
+                            </div>
+                        </div>
+                        <!-- end description question -->
                     </div>
-                    <div class="btn-large" id="delivery-payment">
-                        <div class="icon"></div>
-                        <p class="btn-large-text">Leverans & Betalning</p>
+
+                    <!-- button send -->
+                    <div class="hidden-group button-row">
+                        <input type="submit" name="submit" value="Skicka">
                     </div>
-                    <div class="btn-large" id="return-order">
-                        <div class="icon"></div>
-                        <p class="btn-large-text">Ångerköp</p>
-                    </div>
-                    <div class="btn-large" id="complaint">
-                        <div class="icon"></div>
-                        <p class="btn-large-text">Reklamation</p>
-                    </div>
-                    <div class="btn-large" id="other-questions">
-                        <div class="icon"></div>
-                        <p class="btn-large-text">Övriga frågor</p>
-                    </div>
-                </div>
-                <div class="form-content">
+
                 
-                    <div class="category-items">
-                        <ul></ul>
-                    </div>
-                    <!-- start shred group -->
-                    <div class="hidden-group shred-group"> 
-                        <div class="form-group">
-                            <div class="form-group-col">
-                                <label class="inputLabel" for="contactname">Namn: <span class="alert"> * </span></label>	
-                                <input type="text" name="contactname" size="30" id="contactname">
-                            </div>
-                            <div class="form-group-col">
-                                <label class="inputLabel" for="email-address">E-post: <span class="alert"> * </span></label>	
-                                <input type="email" name="email" size="30" id="email-address">
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group-col">
-                                <label class="inputLabel" for="phoneNumber">Mobilnummer: <span class="alert"> * </span></label>	
-                                <input type="text" name="tel" size="30" id="phoneNumber">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end shred-group -->
-                    <!-- start order number -->
-                    <div class="hidden-group field-ordernr">
-                        <div class="form-group-col">
-                            <label class="inputLabel" for="ordernr">Ordernummer</label>			  
-                            <input type="text" name="ordernr" size="20" id="ordernr">
-                        </div>
-                    </div>
-                    <!-- end order number -->
-                    <!-- start description question -->
-                    <div class="hidden-group field-description-q">
-                        <div class="form-group-col" >
-                            <label class="inputLabel" for="description-q">Beskrivning/frågeställning etc:</label>
-                            <textarea name="descriptionq" cols="30" rows="6" id="description-q"></textarea>      
-                        </div>
-                    </div>
-                    <!-- end description question -->
                 </div>
+                <div class="info">
+                    <div class="info-text">
+                        <p>
+                            <strong>Kundtjänst (Övrig kontaktinformation):</strong>
+                            <br/><br/>
+                            <strong>E-post:</strong> info@trendrum.se
+                            <br/><br/>
+                            <strong>Samarbeten/marknadsföring:</strong> marknad@trendrum.se
+                            <br/><br/>
+                            <strong>Öppettider kundtjänst (telefon):</strong>
+                            <br/>Vår telefonväxel är tillfälligt stängd.<br/>
+                            Ni når oss via kontaktfomuläret ovan, eller epost
+                            <br/><br/>
+                            <strong>Adress lager: (observera att vi inte har möjlighet att ta emot kunder på vårt lager)</strong>
+                            <br/>Trendrum.se lager i Glimåkra<br/>
+                            Källbogatan 1<br/>
+                            289 47 Glimåkra<br/><br/>
 
-                <!-- button send -->
-                <div class="hidden-group button-row">
-                    <input type="submit" name="submit" value="Skicka">
-                </div>
+                            <strong>Postadress / bolagets officiella adress (observera att vi inte har möjlighet att ta emot kunder eller returgods på denna adress)</strong>
+                            <br/>Trendrum.se, Trendrum AB<br/>
+                            Barbackagatan 2A<br/>
+                            291 32 Kristianstad<br/>
+                            Sweden<br/><br/>
 
-            
-            </div>
-            <div class="info">
-                <div class="info-text">
-                    <p>
-                        <strong>Kundtjänst (Övrig kontaktinformation):</strong>
-                        <br/><br/>
-                        <strong>E-post:</strong> info@trendrum.se
-                        <br/><br/>
-                        <strong>Samarbeten/marknadsföring:</strong> marknad@trendrum.se
-                        <br/><br/>
-                        <strong>Öppettider kundtjänst (telefon):</strong>
-                        <br/>Vår telefonväxel är tillfälligt stängd.<br/>
-                        Ni når oss via kontaktfomuläret ovan, eller epost
-                        <br/><br/>
-                        <strong>Adress lager: (observera att vi inte har möjlighet att ta emot kunder på vårt lager)</strong>
-                        <br/>Trendrum.se lager i Glimåkra<br/>
-                        Källbogatan 1<br/>
-                        289 47 Glimåkra<br/><br/>
-
-                        <strong>Postadress / bolagets officiella adress (observera att vi inte har möjlighet att ta emot kunder eller returgods på denna adress)</strong>
-                        <br/>Trendrum.se, Trendrum AB<br/>
-                        Barbackagatan 2A<br/>
-                        291 32 Kristianstad<br/>
-                        Sweden<br/><br/>
-
-                        <strong>Organisationsnummer</strong> 556719-1894
-                    </p>
+                            <strong>Organisationsnummer</strong> 556719-1894
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="images-box">
-                <div class="image-box">
-                    <img src="./img/contact-us.png" alt="Kontakta oss" />
-                    <h3>Kontakta oss</h3>
-                    <p>Du väljer själv hur du vill kontakta oss. Via chatt, telefon eller e-mail. Vi har öppet vardagar 8-18.</p>
-                </div>
-                <div class="image-box">
-                    <img src="./img/order.png" alt="Din order" />
-                    <h3>Din order</h3>
-                    <p>Normalt levereras dina varor inom 2-5 vardagar, antingen med Schenker eller fraktfritt till butik.</p>
-                </div>
-                <div class="image-box">
-                    <img src="./img/return.png" alt="Retur & reklamation" />
-                    <h3>Retur & reklamation</h3>
-                    <p>30 dagars öppet köp. På reavaror gäller 14 dagars öppet köp i butik och 14 dagars ångerrätt online.</p>
+                <div class="images-box">
+                    <div class="image-box">
+                        <img src="./img/contact-us.png" alt="Kontakta oss" />
+                        <h3>Kontakta oss</h3>
+                        <p>Du väljer själv hur du vill kontakta oss. Via chatt, telefon eller e-mail. Vi har öppet vardagar 8-18.</p>
+                    </div>
+                    <div class="image-box">
+                        <img src="./img/order.png" alt="Din order" />
+                        <h3>Din order</h3>
+                        <p>Normalt levereras dina varor inom 2-5 vardagar, antingen med Schenker eller fraktfritt till butik.</p>
+                    </div>
+                    <div class="image-box">
+                        <img src="./img/return.png" alt="Retur & reklamation" />
+                        <h3>Retur & reklamation</h3>
+                        <p>30 dagars öppet köp. På reavaror gäller 14 dagars öppet köp i butik och 14 dagars ångerrätt online.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
     
     <script type="text/javascript" src="./scripts.js"></script>
 </body>

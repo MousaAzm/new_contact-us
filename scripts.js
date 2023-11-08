@@ -42,13 +42,17 @@ window.addEventListener("load", () =>{
             const elId = btn.getAttribute("id");
 
             if(elId === "other-questions"){
+                const itemsContent = document.querySelector(".category-items ul");
+                itemsContent.innerHTML = "";
+
                 document.querySelector(".shred-group").style.display = "block";
                 document.querySelector(".field-ordernr").style.display = "block";
                 document.querySelector(".field-description-q").style.display = "block";
-                document.querySelector(".button-row").style.display = "block";
+                document.querySelector(".button-row").style.display = "flex";
+            }else{
+                genrateItem(elId);
             }
-
-            genrateItem(elId);
+            
         });
     })
 
@@ -116,7 +120,7 @@ const genrateItem = (id) => {
        li.innerHTML = item.text;
        li.addEventListener("click", () => { 
         elemenstAction(hiddenElements, null); 
-        visableCategoryItems(item.value);  
+        visableCategoryForm(item.value);  
         li.classList.toggle("active");
        });
 
@@ -124,38 +128,38 @@ const genrateItem = (id) => {
     })
 }
 
-const visableCategoryItems = (categoryItem) => {
+const visableCategoryForm = (categoryItem) => {
 
     switch (categoryItem) {
         case "offer":
             document.querySelector(".shred-group").style.display = "block";
             document.querySelector(".field-ordernr").style.display = "block";
             document.querySelector(".field-description-q").style.display = "block";
-            document.querySelector(".button-row").style.display = "block";
+            document.querySelector(".button-row").style.display = "flex";
             break;
         case "cancel-order":
             document.querySelector(".shred-group").style.display = "block";
             document.querySelector(".field-ordernr").style.display = "block";
             document.querySelector(".field-description-q").style.display = "block";
-            document.querySelector(".button-row").style.display = "block";
+            document.querySelector(".button-row").style.display = "flex";
             break;
         case "delivery":
             document.querySelector(".shred-group").style.display = "block";
             document.querySelector(".field-ordernr").style.display = "block";
             document.querySelector(".field-description-q").style.display = "block";
-            document.querySelector(".button-row").style.display = "block";
+            document.querySelector(".button-row").style.display = "flex";
             break;
         case "return-order":
             document.querySelector(".shred-group").style.display = "block";
             document.querySelector(".field-ordernr").style.display = "block";
             document.querySelector(".field-description-q").style.display = "block";
-            document.querySelector(".button-row").style.display = "block";
+            document.querySelector(".button-row").style.display = "flex";
             break;
         case "shipping-damage":
             document.querySelector(".shred-group").style.display = "block";
             document.querySelector(".field-ordernr").style.display = "block";
             document.querySelector(".field-description-q").style.display = "block";
-            document.querySelector(".button-row").style.display = "block";
+            document.querySelector(".button-row").style.display = "flex";
             break;
         default:
             break;
