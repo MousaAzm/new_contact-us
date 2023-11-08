@@ -41,13 +41,13 @@ window.addEventListener("load", () => {
             const elId = btn.getAttribute("id");
 
             if(elId === "other-questions"){
+                
                 const itemsContent = document.querySelector(".category-items ul");
                 itemsContent.innerHTML = "";
 
-                document.querySelector(".shred-group").style.display = "block";
-                document.querySelector(".field-ordernr").style.display = "block";
-                document.querySelector(".field-description-q").style.display = "block";
-                document.querySelector(".hidden-group-btn").style.display = "block";
+                const elementsClassName = ["shred-group", "field-ordernr", "field-description-q", "hidden-group-btn"];
+                displayElements(elementsClassName);
+
             }else{
                 genrateItem(elId);
             }
