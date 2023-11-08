@@ -1,9 +1,8 @@
 
-window.addEventListener("load", () =>{
+window.addEventListener("load", () => {
    
     const btns = document.querySelectorAll(".btn-large");
     const hiddenElements = document.querySelectorAll('.hidden-group');
-    const categoryTitle = document.querySelector('.category-title');
     const colors = document.querySelectorAll('.color-box');
 
     colors.forEach((color) => {
@@ -129,43 +128,32 @@ const genrateItem = (id) => {
 }
 
 const visableCategoryForm = (categoryItem) => {
-
+    // TODO: change test array and every case don't have same array.
     switch (categoryItem) {
         case "offer":
-            document.querySelector(".shred-group").style.display = "block";
-            document.querySelector(".field-ordernr").style.display = "block";
-            document.querySelector(".field-description-q").style.display = "block";
-            document.querySelector(".hidden-group-btn").style.display = "block";
+            const elementsClassName1 = ["shred-group", "field-ordernr", "field-description-q", "hidden-group-btn"];
+            displayElements(elementsClassName1)
             break;
         case "cancel-order":
-            document.querySelector(".shred-group").style.display = "block";
-            document.querySelector(".field-ordernr").style.display = "block";
-            document.querySelector(".field-description-q").style.display = "block";
-            document.querySelector(".hidden-group-btn").style.display = "block";
+            const elementsClassName2 = ["shred-group", "field-ordernr", "field-description-q", "hidden-group-btn"];
+            displayElements(elementsClassName2)
             break;
         case "delivery":
-            document.querySelector(".shred-group").style.display = "block";
-            document.querySelector(".field-ordernr").style.display = "block";
-            document.querySelector(".field-description-q").style.display = "block";
-            document.querySelector(".hidden-group-btn").style.display = "block";
+            const elementsClassName3= ["shred-group", "field-ordernr", "field-description-q", "hidden-group-btn"];
+            displayElements(elementsClassName3)
             break;
         case "return-order":
-            document.querySelector(".shred-group").style.display = "block";
-            document.querySelector(".field-ordernr").style.display = "block";
-            document.querySelector(".field-description-q").style.display = "block";
-            document.querySelector(".hidden-group-btn").style.display = "block";
+            const elementsClassName4 = ["shred-group", "field-ordernr", "field-description-q", "hidden-group-btn"];
+            displayElements(elementsClassName4)
             break;
         case "shipping-damage":
-            document.querySelector(".shred-group").style.display = "block";
-            document.querySelector(".field-ordernr").style.display = "block";
-            document.querySelector(".field-description-q").style.display = "block";
-            document.querySelector(".hidden-group-btn").style.display = "block";
+            const elementsClassName5 = ["shred-group", "field-ordernr", "field-description-q", "hidden-group-btn"];
+            displayElements(elementsClassName5)
             break;
         default:
             break;
     }
 }
-
 
 const elemenstAction = (hiddenElements, btns) => {
    
@@ -181,3 +169,11 @@ const elemenstAction = (hiddenElements, btns) => {
         btns[i].classList.remove("active");
     }
 }
+
+const displayElements = (elements) => {
+
+    elements.forEach((className) => {
+        document.querySelector(`.${className}`).style.display = "block";
+    });
+
+};
