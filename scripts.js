@@ -49,8 +49,10 @@ window.addEventListener("load", () =>{
                 document.querySelector(".field-ordernr").style.display = "block";
                 document.querySelector(".field-description-q").style.display = "block";
                 document.querySelector(".hidden-group-btn").style.display = "block";
+            }else{
+                genrateItem(elId);
             }
-            genrateItem(elId);
+            
         });
     })
 
@@ -151,7 +153,7 @@ const visableCategoryForm = (categoryItem) => {
             document.querySelector(".shred-group").style.display = "block";
             document.querySelector(".field-ordernr").style.display = "block";
             document.querySelector(".field-description-q").style.display = "block";
-            document.querySelector(".hidden-group-btn").style.display = "flex";
+            document.querySelector(".hidden-group-btn").style.display = "block";
             break;
         case "shipping-damage":
             document.querySelector(".shred-group").style.display = "block";
