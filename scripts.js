@@ -48,11 +48,9 @@ window.addEventListener("load", () =>{
                 document.querySelector(".shred-group").style.display = "block";
                 document.querySelector(".field-ordernr").style.display = "block";
                 document.querySelector(".field-description-q").style.display = "block";
-                document.querySelector(".button-row").style.display = "flex";
-            }else{
-                genrateItem(elId);
+                document.querySelector(".hidden-group-btn").style.display = "block";
             }
-            
+            genrateItem(elId);
         });
     })
 
@@ -135,31 +133,31 @@ const visableCategoryForm = (categoryItem) => {
             document.querySelector(".shred-group").style.display = "block";
             document.querySelector(".field-ordernr").style.display = "block";
             document.querySelector(".field-description-q").style.display = "block";
-            document.querySelector(".button-row").style.display = "flex";
+            document.querySelector(".hidden-group-btn").style.display = "block";
             break;
         case "cancel-order":
             document.querySelector(".shred-group").style.display = "block";
             document.querySelector(".field-ordernr").style.display = "block";
             document.querySelector(".field-description-q").style.display = "block";
-            document.querySelector(".button-row").style.display = "flex";
+            document.querySelector(".hidden-group-btn").style.display = "block";
             break;
         case "delivery":
             document.querySelector(".shred-group").style.display = "block";
             document.querySelector(".field-ordernr").style.display = "block";
             document.querySelector(".field-description-q").style.display = "block";
-            document.querySelector(".button-row").style.display = "flex";
+            document.querySelector(".hidden-group-btn").style.display = "block";
             break;
         case "return-order":
             document.querySelector(".shred-group").style.display = "block";
             document.querySelector(".field-ordernr").style.display = "block";
             document.querySelector(".field-description-q").style.display = "block";
-            document.querySelector(".button-row").style.display = "flex";
+            document.querySelector(".hidden-group-btn").style.display = "flex";
             break;
         case "shipping-damage":
             document.querySelector(".shred-group").style.display = "block";
             document.querySelector(".field-ordernr").style.display = "block";
             document.querySelector(".field-description-q").style.display = "block";
-            document.querySelector(".button-row").style.display = "flex";
+            document.querySelector(".hidden-group-btn").style.display = "block";
             break;
         default:
             break;
@@ -168,6 +166,7 @@ const visableCategoryForm = (categoryItem) => {
 
 
 const elemenstAction = (hiddenElements, btns) => {
+   
     hiddenElements.forEach(element => {
         element.style.display = "none";
     });
