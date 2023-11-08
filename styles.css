@@ -122,7 +122,7 @@ body {
     height: 66px;
     transition: all 0.3s ease-in-out;
     background-color: var(--bg-color);
-    font-size: 14px;
+    font-size: 12px;
     white-space: nowrap;
     /* text-transform: uppercase;
     text-align: center;
