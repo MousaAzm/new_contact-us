@@ -122,8 +122,11 @@ body {
     height: 66px;
     transition: all 0.3s ease-in-out;
     background-color: var(--bg-color);
-    font-size: 13px;
+    font-size: 14px;
     white-space: nowrap;
+    /* text-transform: uppercase;
+    text-align: center;
+    line-height: 20px; */
     color: var(--text-color);
 }
 
@@ -203,7 +206,6 @@ body {
 }
 
 .contact-us .info {
-    margin-top: 16px;
     text-align: center;
 }
 
